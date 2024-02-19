@@ -12,7 +12,7 @@ stages {
 node {
   stage ('Build') {
     withMaven(traceability: true) {
-      ...
+
     }
   }
 }
