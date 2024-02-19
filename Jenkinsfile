@@ -1,7 +1,7 @@
 pipeline {
     agent any 
 stages {
-        stage('checking version') {
+        stage('checking version build ') {
             steps {
                 sh 'mvn --version, '
                 
@@ -9,10 +9,4 @@ stages {
         }
     }
 }
-node {
-  stage ('Build') {
-    withMaven(traceability: true) {
 
-    }
-  }
-}
